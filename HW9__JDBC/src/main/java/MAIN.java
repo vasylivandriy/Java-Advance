@@ -16,6 +16,10 @@ public class MAIN {
 //        carDaoDelete.deleteCond("color","red");
 //        carDaoDelete.carDeleteAll();
 
+        CarDaoUpdate carDaoUpdate = new CarDaoUpdate();
+        carDaoUpdate.update(1,"Bentley", "grey");
+
+
 
         CarDaoRead carDaoRead = new CarDaoRead();
         List<Car> carsRead = carDaoRead.getALL();
