@@ -6,13 +6,16 @@ public class MAIN {
     public static void main(String[] args) throws SQLException {
 
 
-
-        CarDaoInsert carDaoInsert = new CarDaoInsert();
-        carDaoInsert.insertValue("Jaguar", "Red");
+//        CarDaoInsert carDaoInsert = new CarDaoInsert();
+//        carDaoInsert.insertValue("Jaguar", "Red");
 
 
         CarDaoDelete carDaoDelete = new CarDaoDelete();
-        carDaoDelete.deleteCond(1);
+
+//        carDaoDelete.deleteCond(1);
+//        carDaoDelete.deleteCond("color","red");
+//        carDaoDelete.carDeleteAll();
+
 
         CarDaoRead carDaoRead = new CarDaoRead();
         List<Car> carsRead = carDaoRead.getALL();
