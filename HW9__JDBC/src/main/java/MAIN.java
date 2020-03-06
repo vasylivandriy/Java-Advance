@@ -5,11 +5,15 @@ public class MAIN {
 
     public static void main(String[] args) throws SQLException {
 
-        CarDao carDao = new CarDao();
+        CarDaoRead carDaoRead = new CarDaoRead();
+        List<Car> carsRead = carDaoRead.getALL();
 
-        List<Car> cars = carDao.getCarALL();
+        System.out.println("Cars read");
+        System.out.println(carsRead);
 
-        System.out.println(cars);
+        CarDaoInsert carDaoInsert = new CarDaoInsert();
+        carDaoInsert.insertValue("Jaguar", "Red");
+
 
     }
 }

@@ -7,6 +7,7 @@ public class Car {
     private String model;
     private String color;
 
+
     public int getId() {
         return id;
     }
@@ -32,7 +33,7 @@ public class Car {
     }
 
 
-    public static Car result(ResultSet resultSet ) throws SQLException {
+    public static Car result(ResultSet resultSet) throws SQLException {
 
         Car car = new Car();
 
@@ -40,7 +41,7 @@ public class Car {
         car.setModel(resultSet.getString("model"));
         car.setColor(resultSet.getString("color"));
 
-        return null;
+        return car;
     }
 
 
